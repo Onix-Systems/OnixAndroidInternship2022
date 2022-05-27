@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Internship</string>
+
+    <string name="auth_user_name_hint">Enter your name</string>
+    <string name="auth_email_hint">Enter email</string>
+    <string name="auth_pass_hint">Enter password</string>
+    <string name="auth_login">LogIn</string>
+
+    <string name="title_messages">Messages</string>
+
+    <string name="err_empty_name">Name is empty</string>
+    <string name="err_empty_email">Email is empty or incorrect</string>
+    <string name="err_empty_pass">Password is empty</string>
+    <string name="err_empty_token">Token is empty</string>
+
+    <string name="menu_log_out">Log out</string>
+</resources>
