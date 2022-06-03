@@ -1,7 +1,6 @@
 package com.onix.internship
 
 import android.app.Application
-import com.onix.network.di.networkModule
 import com.onix.internship.di.mapperModule
 import com.onix.internship.di.providerModule
 import com.onix.internship.di.repositoryModule
@@ -12,7 +11,7 @@ import org.koin.core.context.startKoin
 class InternshipApp : Application() {
 
     private val appModules by lazy {
-        listOf(mapperModule, repositoryModule, providerModule, viewModelModule, networkModule)
+        listOf(mapperModule, repositoryModule, providerModule, viewModelModule)
     }
 
     override fun onCreate() {

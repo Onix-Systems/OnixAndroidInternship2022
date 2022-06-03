@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
     <data>
-
+        <import type="com.onix.internship.R"/>
     </data>
 
     <FrameLayout
@@ -11,11 +13,13 @@
         android:layout_height="match_parent"
         tools:context=".ui.splash.SplashFragment">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/app_name" />
+            app:gifImage="@{R.raw.cat_run}"
+            >
+
+        </ImageView>
 
     </FrameLayout>
 </layout>

@@ -1,15 +1,14 @@
 package com.onix.internship.domain.usecase
 
-import com.onix.network.response.Either
 import com.onix.internship.R
 import com.onix.internship.arch.ext.isValidEmail
+import com.onix.internship.arch.mapper.Either
 import com.onix.internship.arch.provider.TextResProvider
 import com.onix.internship.arch.provider.model.TextProvider
-import com.onix.internship.data.repository.AuthRepository
+import com.onix.internship.domain.entity.UserModel
 import com.onix.internship.domain.entity.UserTokenModel
 
 class AuthUseCase(
-    private val authRepository: AuthRepository,
     private val textProvider: TextResProvider
 ) {
 
@@ -40,7 +39,8 @@ class AuthUseCase(
                     )
                 )
             }
-            authRepository.signUp(mName, mEmail, mPass)
+
+            return Either.success(UserTokenModel("","", UserModel(1,"","","")))
         } catch (e: Throwable) {
             Either.failure(e)
         }

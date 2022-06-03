@@ -1,4 +1,4 @@
-package com.onix.network.response
+package com.onix.internship.arch.mapper
 
 class Either<out T>(val value: Any?) {
 

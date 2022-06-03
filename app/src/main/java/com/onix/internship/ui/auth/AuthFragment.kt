@@ -6,7 +6,6 @@ import com.onix.internship.arch.BaseFragment
 import com.onix.internship.arch.ext.navigate
 import com.onix.internship.databinding.AuthFragmentBinding
 import com.onix.internship.domain.entity.UserModel
-import com.onix.internship.ui.chat.ChatFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class AuthFragment : BaseFragment<AuthFragmentBinding>(R.layout.auth_fragment) {
@@ -20,9 +19,9 @@ class AuthFragment : BaseFragment<AuthFragmentBinding>(R.layout.auth_fragment) {
 
     private fun toMainScreen(userModel: UserModel) {
         val args = Bundle().apply {
-            this.putSerializable(ChatFragment.ARGS_USER, userModel)
+            //this.putSerializable(ChatFragment.ARGS_USER, userModel)
         }
-        navigate(R.id.chatFragment, args)
+        //navigate(R.id.chatFragment, args)
     }
 
 }

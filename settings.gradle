@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "internship"
 include ':app'
-include ':network'
