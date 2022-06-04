@@ -3,7 +3,7 @@
 
     <application
         android:name=".InternshipApp"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -11,10 +11,12 @@
         android:theme="@style/Theme.internship">
         <activity
             android:name=".ui.main.MainScreen"
+            android:screenOrientation="sensor"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
