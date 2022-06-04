@@ -14,17 +14,4 @@
         android:name="com.onix.internship.ui.auth.AuthFragment"
         android:label="AuthFragment"/>
 
-    <fragment
-        android:id="@+id/chatFragment"
-        android:name="com.onix.internship.ui.chat.ChatFragment"
-        android:label="ChatFragment">
-        <argument
-            android:name="user"
-            app:argType="com.onix.internship.domain.entity.UserModel" />
-        <action
-            android:id="@+id/action_chatFragment_to_authFragment2"
-            app:destination="@id/authFragment"
-            app:popUpTo="@id/authFragment" />
-    </fragment>
-
 </navigation>
