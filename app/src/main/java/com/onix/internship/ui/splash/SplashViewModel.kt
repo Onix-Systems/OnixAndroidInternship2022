@@ -10,10 +10,10 @@ class SplashViewModel(
 
     val initEvent = SingleLiveEvent<Boolean>()
 
-    fun init() {
+    init {
         onLoading(true)
         launch {
-            delay(5000)
+            delay(2500)
             initEvent.postValue(true)
         }
     }
