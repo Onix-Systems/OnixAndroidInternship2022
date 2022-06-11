@@ -12,6 +12,11 @@
     <fragment
         android:id="@+id/authFragment"
         android:name="com.onix.internship.ui.auth.AuthFragment"
-        android:label="AuthFragment"/>
+        android:label="AuthFragment" />
+
+    <fragment
+        android:id="@+id/canvasFragment"
+        android:name="com.onix.internship.ui.canvas.CanvasFragment"
+        android:label="CanvasFragment" />
 
 </navigation>
