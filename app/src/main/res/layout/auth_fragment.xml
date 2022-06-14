@@ -85,11 +85,6 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:visibility="@{viewModel.loading ? View.VISIBLE: View.GONE}" />
 
     </FrameLayout>
 </layout>

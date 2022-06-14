@@ -1,15 +1,7 @@
 package com.onix.internship.arch.mapper
 
-class Either<out T>(val value: Any?) {
+class Either<out T>(private val value: Any?) {
 
-    val isSuccess: Boolean get() = value !is Failure
-
-    val isFailure: Boolean get() = value is Failure
-
-    fun exceptionOrNull(): Throwable? = when (value) {
-        is Failure -> value.exception
-        else -> null
-    }
 
     override fun toString(): String =
         when (value) {
@@ -32,19 +24,5 @@ class Either<out T>(val value: Any?) {
 
 private fun createFailure(exception: Throwable): Any = Either.Failure(exception)
 
-inline fun <R, reified T> Either<T>.map(transform: (value: T) -> R): Either<R> {
-    return when {
-        isSuccess -> Either.success(transform(value as T))
-        else -> Either(value)
-    }
-}
 
-inline fun <T> Either<T>.onFailure(action: (exception: Throwable) -> Unit): Either<T> {
-    exceptionOrNull()?.let { action(it) }
-    return this
-}
 
-inline fun <reified T> Either<T>.onSuccess(action: (value: T) -> Unit): Either<T> {
-    if (isSuccess) action(value as T)
-    return this
-}

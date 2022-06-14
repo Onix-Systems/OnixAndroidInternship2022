@@ -10,14 +10,5 @@ class SplashFragment : BaseFragment<SplashFragmentBinding>(R.layout.splash_fragm
 
     override val viewModel: SplashViewModel by viewModel()
 
-    override fun setObservers() {
-        viewModel.initEvent.observe(this) {
-            if (it) showLogInScreen()
-        }
-    }
-
-    private fun showLogInScreen() {
-        navigate(R.id.canvasFragment, clearStack = true)
-    }
 
 }
