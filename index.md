@@ -29,7 +29,7 @@ There is a API concept - you application should support this kind of devices
       "room": "Toilet",
       "type": "Camera",
       "subtype": "onetime",
-      "value": "https://images.unsplash.com/photo-1589824783837-6169889fa20f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+      "value": "https://www.wrenkitchens.com/blog/wp-content/uploads/2021/12/2022-kitchen-design-trends-dark-kitchen-2048x1366.jpg"
     },
     {
       "room": "Kitchen",
